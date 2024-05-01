@@ -4,7 +4,7 @@ import { LoginButton, LogoutButton } from "./AuthButtons";
 export default async function Home() {
   const session = await auth();
   return (
-    <div className="mx-auto py-4 max-w-lg">
+    <div className="mx-auto max-w-lg py-4">
       <h1>
         {session?.user 
         ? "authentificated" + session?.user.email
