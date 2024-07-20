@@ -2,6 +2,7 @@ import { SiteConfig } from '../../lib/site-config';
 import Link from 'next/link';
 import { ThemeToggle } from '../theme/ThemeToggle';
 import { Typography } from '../ui/Typography';
+import AuthButtons from '../features/auth/AuthButtons'; 
 
 export function Header() {
   return (
@@ -14,7 +15,8 @@ export function Header() {
         </div>
 
         <div className="flex flex-1 items-center justify-end space-x-4">
-          <nav className="flex items-center space-x-1">
+          <nav className="flex items-center space-x-4">
+            <AuthButtons />
             <ThemeToggle />
           </nav>
         </div>
